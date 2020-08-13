@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mynotes">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/squareyinyang"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/yinyang"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:label">
+
+        <activity android:name=".fragment.note.Instruction"></activity>
+        <activity android:name=".fragment.note.ProfileActivity" />
+        <activity android:name=".fragment.note.LoginRegisterActivity" />
+        <activity
+            android:name=".fragment.note.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mynotes.fragment.note.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragment.new_MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".fragment.video.Afragment"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+    </application>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+</manifest>

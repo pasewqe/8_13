@@ -1,0 +1,210 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_layout">
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/camera_view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:id="@+id/anger"
+                    android:text="生氣"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/camera_fps_text"
+                    android:textSize="20sp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:id="@+id/contempt"
+                    android:text="鄙視"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/processor_fps_text"
+                    android:textSize="20sp"/>
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:id="@+id/disgust"
+                    android:text="厭惡"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/disgustv"
+                    android:textSize="20sp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:id="@+id/fear"
+                    android:text="恐懼"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/fearv"
+                    android:textSize="20sp"/>
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:id="@+id/joy"
+                    android:text="開心"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/joyv"
+                    android:textSize="20sp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:id="@+id/sad"
+                    android:text="哀傷"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/sadv"
+                    android:textSize="20sp"/>
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="78dp"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:id="@+id/surprise"
+                    android:text="驚訝"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/surprisev"
+                    android:textSize="20sp"/>
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
